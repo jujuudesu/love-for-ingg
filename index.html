@@ -1,29 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <title>For Ing</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สำหรับอิงคนเดียว ❤️</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to top right, #ffe6e6, #fff);
+      font-family: 'Kanit', sans-serif;
       text-align: center;
-      margin-top: 15%;
-      background: linear-gradient(135deg, #ffe6f0, #ff99cc);
-      color: #800040;
+      padding: 50px;
+      color: #ff4d6d;
     }
     h1 {
-      font-size: 4em;
-      margin-bottom: 0.2em;
-      text-shadow: 1px 1px 2px #ff66b2;
+      font-size: 3em;
+      margin-bottom: 20px;
     }
     p {
       font-size: 1.5em;
-      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e63950;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 1.2em;
+      color: #cc0033;
     }
   </style>
 </head>
 <body>
-  <h1>I love you, อิง 💗</h1>
-  <p>จากใจฉัน... ที่อยากให้เธอรู้ทุกวัน</p>
+  <h1>ถึงอิงคนเดียว 💌</h1>
+  <p>มีบางอย่างอยากบอกอิง...</p>
+  <button onclick="showLove()">คลิกที่นี่สิ 💖</button>
+  <div id="message"></div>
+
+  <script>
+    function showLove() {
+      const msg = document.getElementById('message');
+      msg.innerHTML = "รักอิงที่สุดในโลกเลยนะ 💕<br>ทุกวันมีอิงคือของขวัญที่สุดแล้ว";
+    }
+  </script>
 </body>
 </html>
